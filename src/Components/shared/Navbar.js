@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
+///styles
+import styles from "../../Styles/Navbar.module.css"
+
 ///Asset
-import shpIcons from "../../Asset/shopping-basket-svgrepo-com.svg"
+import shopIcons from "../../Asset/shopping-basket-svgrepo-com.svg"
 
 
 ///Context
@@ -13,11 +16,11 @@ const Navbar = () => {
     const {state} = useContext(cartContext)
 
     return (
-        <div>
-            <div>
-                <Link to="/products">products</Link>
-                <div>
-                   <Link to="/Cart"><img src={shpIcons} alt='Icons' style={{width: "20px"}}/></Link> 
+        <div className={styles.mainContainer}>
+            <div className={styles.container}>
+                <Link className={styles.productLink} to="/products" >products</Link>
+                <div className={styles.iconContainer}>
+                   <Link to="/Cart"><img src={shopIcons} alt='Icons' style={{width: "20px"}}/></Link> 
                     <span>{state.itemsCounter}</span>
                 </div>
             </div>

@@ -1,0 +1,107 @@
+.container{
+    display: flex;
+    justify-content:  space-between;
+    align-items: flex-start;
+    margin: 150px 175px 50px;
+    transition: all 0.2s ease;
+}
+.cartContainer{
+    width: 70%;
+}
+.payment{
+    width: 27%;
+    background: #fff;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-align: left;
+}
+.payment p{
+    color: rgb(61, 61, 61);
+    margin: 20px 20px 10px;
+}
+.payment p span{
+    color: #1a73e8;
+    font-weight: bold;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px 20px 10px;
+}
+.checkout{
+    display: inline-block;
+    background-color: #34a853;
+    padding: 7px 16px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    box-shadow: rgb(0, 0, 0, 0.07) 0px 1px 1px, rgb(0, 0, 0, 0.07) 0px 2px 2px, rgb(0, 0, 0, 0.07) 0px 4px 4px, rgb(0, 0, 0, 0.07) 0px 8px 8px, rgb(0, 0, 0, 0.07) 0px 9px 16px;
+}
+.checkout:hover{
+    background-color: #34a853;
+}
+.clear{
+    cursor: pointer;
+    color: #34a853;
+    background: none;
+    border: none;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+.complete a{
+    background-color: #1a73e8;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 90px;
+    font-weight: bold;
+    line-height: 30px;
+    box-shadow: rgb(50, 50, 93, 0.25) 0px 4px 12px -2px, rgb(0, 0, 0, 0.3) 0px 3px 7px -3px ;
+    margin-left: 5px;
+    text-align: center;
+}
+.complete a:hover{
+    background-color: #08499d;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        margin: 120px 80px 50px;
+    }
+}
+@media (max-width: 1050px) {
+    .container{
+        flex-direction: column-reverse;
+        margin: 120px 80px 50px;
+        align-items: center;
+    }
+    .cartContainer{
+        width: 100%;
+    }
+    .payment{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        margin: 120px 40px 50px;
+    }
+    .textContainer{
+        margin: 0;
+    }
+}
+@media (max-width: 555px) {
+    .container{
+        margin: 120px 20px 50px;
+    }
+}
